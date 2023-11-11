@@ -1,0 +1,1 @@
+mshta javascript:alert("Message\n\nMultiple\nLines\ntoo!");close();

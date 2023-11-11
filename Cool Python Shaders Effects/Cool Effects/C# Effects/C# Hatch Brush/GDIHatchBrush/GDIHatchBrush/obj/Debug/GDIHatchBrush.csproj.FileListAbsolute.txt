@@ -1,0 +1,2 @@
+C:\Users\seany\OneDrive\Desktop\Cool Python Shaders Effects\Cool Effects\C# Effects\C# Hatch Brush\GDIHatchBrush\GDIHatchBrush\obj\Debug\GDIHatchBrush.csproj.AssemblyReference.cache
+C:\Users\seany\OneDrive\Desktop\Cool Python Shaders Effects\Cool Effects\C# Effects\C# Hatch Brush\GDIHatchBrush\GDIHatchBrush\obj\Debug\GDIHatchBrush.csproj.CoreCompileInputs.cache
