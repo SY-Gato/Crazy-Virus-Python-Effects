@@ -1,3 +1,7 @@
+import ctypes
+# REQUIRED: warning message
+ctypes.windll.user32
+
 # import required pywin32 modules for gdi
 import win32api
 import win32gui
