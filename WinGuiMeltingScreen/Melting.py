@@ -17,6 +17,9 @@ x = GetSystemMetrics(0)
 y = GetSystemMetrics(1)
 x2 = GetSystemMetrics(0)
 y2 = GetSystemMetrics(1)
+# define duplicates/variables for code
+hwnd2 = hwnd
+hdc2 = hdc
 
 # code start
 desktop = GetDesktopWindow()
@@ -27,4 +30,14 @@ def redraw(): # reset screen to normal. mostly removes all gdi effects.
 
 def Melting(amt, minus):
   for i in range(amt):
-    
+    hwnd2 = GetDesktopWindow()
+    hdc2 = GetWindowDC(hwnd2)
+    BitBlt(hdc2, 0, random.randint(0, 10)-minus, random.randint(0, x)-minus, y, hdc2, 0, 0, win32con.SRCCOPY)
+    time.sleep(0.1)
+
+curminus = 0
+for i in range(30):
+  Melting(5, curminus)
+  curminus += 1
+DeleteDC(hdc2)
+redraw()
