@@ -1,7 +1,16 @@
 import ctypes
 # REQUIRED: warning message
-ctypes.windll.user32
-
+#ctypes.windll.user32.MessageBoxW(None, 'Hello', 'Hello World', 0)
+print("WARNING! THIS PROGRAM CONTAINS INTENSE FLASHING LIGHTS AND GRAPHICAL EFFECTS (GDI).")
+print("NOT FOR THE EPILEPTIC.")
+print("")
+continueconfirm = input('ARE YOU SURE YOU WOULD LIKE TO RUN THIS PROGRAM? [Y/N]:')
+if continueconfirm == "Y" or continueconfirm == "y":
+  continueconfirm2 = input('FINAL WARNING. NOT FOR THE EPILEPTIC. [Y/N]:')
+  if continueconrirm2 != "Y" and continueconfirm2 != "y":
+    quit()
+else:
+  quit()
 # import required pywin32 modules for gdi
 import win32api
 import win32gui
